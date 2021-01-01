@@ -6,7 +6,13 @@ import Link from 'next/link'
 const name = 'Marzieh Moghtaderi'
 export const siteTitle = 'Marzzy Codes - Javascript Dev Girl'
 
-export default function Layout({ children, home }) {
+export default function Layout({
+  children,
+  home
+}: {
+  children: React.ReactNode
+  home?: boolean
+}) {
   return (
     <div className={styles.container}>
       <Head>
