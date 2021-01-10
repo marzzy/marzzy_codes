@@ -1,7 +1,9 @@
 
 Todo:
   ☐ compleate the https://nextjs.org/learn/basics/navigate-between-pages to the end
-    ☐ https://nextjs.org/learn/basics/data-fetching/with-data @today 
+    ☐ https://nextjs.org/learn/basics/api-routes @today 
+  ☐ add chakra
+  ☐ add 404 error page
   ☐ make project PWA
   ☐ apply the theming (and make a switch between dark and white & make it handy to use special theming based on occation)
   ☐ apply multilang

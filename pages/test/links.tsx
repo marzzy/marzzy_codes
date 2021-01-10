@@ -24,6 +24,7 @@ export default function Links() {
         you must add `passHref` to Link.
         This is necessary if you’re using libraries like `styled-components`. 
       </span>
+      <br/>
       <Link href="/">
         <a className="foo" target="_blank" rel="noopener noreferrer">
           home page
