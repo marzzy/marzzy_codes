@@ -3,7 +3,7 @@ import { GetStaticProps } from 'next'
 import Layout, { siteTitle } from 'components/layout/layout'
 import utilStyles from 'styles/utils.module.css'
 import { getSortedPostsData } from 'lib/posts'
-import PostCards from 'components/postCards/postCards'
+// import PostCards from 'components/postCards/postCards'
 import { MinimalPostsData } from 'types/post'
 
 export default function Home({
@@ -25,7 +25,7 @@ export default function Home({
           Wildly enthusiastic about having the opportunity for advancement and learning more. 
         </p>
       </section>
-      <PostCards allPostsData={allPostsData} />
+      {/* <PostCards allPostsData={allPostsData} /> */}
     </Layout>
   )
 }
