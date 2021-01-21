@@ -19,6 +19,8 @@ export default function Post({
     <Layout>
       <Head>
         <title>{postData.title}</title>
+        <meta name="robots" content="noindex, nofollow" />
+        <meta name="robots" content="noarchive" />
       </Head>
       <article>
         <h1 className={utilStyles.headingXl}>{postData.title}</h1>
