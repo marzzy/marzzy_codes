@@ -32,6 +32,7 @@
   "rules": {
     "react/react-in-jsx-scope": "off", // import React was set globally
     "react/jsx-filename-extension": [1, { "extensions": [".tsx"] }], // Allow to remove .tsx from imported address
+    "import/extensions": "off",
     "@typescript-eslint/explicit-module-boundary-types": 0, // disable must specify return value for all files
     "jsx-a11y/anchor-is-valid": [ "error", {
       "components": [ "Link" ],
