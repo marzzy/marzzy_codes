@@ -1,0 +1,51 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?fo1cgi');
+  src:  url('fonts/icomoon.eot?fo1cgi#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?fo1cgi') format('truetype'),
+    url('fonts/icomoon.woff?fo1cgi') format('woff'),
+    url('fonts/icomoon.svg?fo1cgi#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-stackoverflow .path1:before {
+  content: "\e900";
+  color: rgb(0, 0, 0);
+}
+.icon-stackoverflow .path2:before {
+  content: "\e901";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.icon-github:before {
+  content: "\e902";
+}
+.icon-insta:before {
+  content: "\e903";
+}
+.icon-arrow-down:before {
+  content: "\ea3e";
+}
+.icon-mail:before {
+  content: "\ea83";
+}
+.icon-linkedin:before {
+  content: "\eac9";
+}

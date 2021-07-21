@@ -5,7 +5,7 @@ const {
   title, description, logo, favicon,
 } = siteMeta;
 const {
-  name, photo, jobTitle, aboutMe, sideProjects, articles,
+  name, photo, jobTitle, aboutMe, sideProjects, articles, constactPoints,
 } = myInfo;
 
 export default function Home() {
@@ -91,14 +91,28 @@ export default function Home() {
               })}
             </ul>
           </section>
-          <section>
-            contanct me
+          <footer>
+            <h4>
+              You can reach Marzzy at
+            </h4>
 
-            {/* <address>
-              <a href="mailto:marzzy.m@gmail.com">marzzy.m@gmail.com</a><br>
-            </address> */}
+            <address>
+              {constactPoints.map((contactPoint) => {
+                const { href, label, iconName } = contactPoint;
 
-          </section>
+                return (
+                  // eslint-disable-next-line react/jsx-no-target-blank
+                  <a href={href} target="_blank" title={label}>
+                    <i className={`icon-${iconName}`}>
+                      <span className="path1" />
+                      <span className="path2" />
+                    </i>
+                  </a>
+                );
+              })}
+            </address>
+
+          </footer>
         </main>
       </body>
     </div>

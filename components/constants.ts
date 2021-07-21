@@ -48,4 +48,30 @@ export const myInfo = {
       summary: 'The hosting and TZD is one of the hottest topics of a javascript developers interview, This is a two-minutes article that tries to summarise what is it and how it works.',
     },
   ],
+  constactPoints: [
+    {
+      href: 'mailto:marzzy.m@gmail.com',
+      label: 'Marzieh Moghtaderi email - marzzy.m@gmail.com',
+      iconName: 'mail',
+    }, {
+      href: 'https://linkedin.com/in/marzzy',
+      label: 'Marzieh Moghtaderi linkedin -  linkedin.com/in/marzzy',
+      iconName: 'linkedin',
+    }, {
+      href: 'https://github.com/marzzy',
+      label: 'Marzieh Moghtaderi github - github.com/marzzy',
+      iconName: 'github',
+    },
+    {
+      href: 'https://stackoverflow.com/story/marzzy',
+      label: 'Marzieh Moghtaderi stackoverflow - stackoverflow.com/story/marzzy',
+      iconName: 'stackoverflow',
+    },
+    // TODO: change instagram link and add it here
+    // {
+    //   href: 'marzzy.m@gmail.com',
+    //   label: 'Marzieh Moghtaderi instagram - marzzy.m@gmail.com',
+    //   iconName: 'insta',
+    // },
+  ],
 };
