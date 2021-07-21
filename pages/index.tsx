@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import { siteMeta, myInfo } from 'components/constants';
+import Section from 'components/section';
 
 const {
   title, description, logo, favicon,
@@ -27,15 +28,14 @@ export default function Home() {
       </Head>
       <body>
         <main>
-          <section>
+          <Section>
             <img
               src={photo}
-              // className={`${styles.headerHomeImage} ${utilStyles.borderCircle}`}
               alt={name}
             />
             <h1>{name}</h1>
             <h2>{jobTitle}</h2>
-          </section>
+          </Section>
           <section>
             <h3>about me</h3>
             {aboutMe.map(({ area, text }) => (
