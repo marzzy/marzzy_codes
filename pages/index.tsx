@@ -1,12 +1,12 @@
 import Head from 'next/head';
-import { siteMeta, myInfo } from 'components/constants';
-import Section from 'components/section';
+import { siteMeta, myInfo, homeSectionsIds } from 'components/constants';
+import TitleSection from 'components/home/titleSection';
 
 const {
   title, description, logo, favicon,
 } = siteMeta;
 const {
-  name, photo, jobTitle, aboutMe, sideProjects, articles, constactPoints,
+  aboutMe, sideProjects, articles, constactPoints,
 } = myInfo;
 
 export default function Home() {
@@ -28,14 +28,7 @@ export default function Home() {
       </Head>
       <body>
         <main>
-          <Section>
-            <img
-              src={photo}
-              alt={name}
-            />
-            <h1>{name}</h1>
-            <h2>{jobTitle}</h2>
-          </Section>
+          <TitleSection sectionId={homeSectionsIds[0]} />
           <section>
             <h3>about me</h3>
             {aboutMe.map(({ area, text }) => (

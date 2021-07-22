@@ -6,8 +6,9 @@ export const siteMeta = {
 };
 
 export const myInfo = {
-  name: 'Marzieh Moghtaderi',
-  photo: '/images/Marzieh-Moghtaderi.jpeg',
+  fname: 'Marzieh',
+  sname: 'Moghtaderi',
+  photo: '/images/Marzieh-Moghtaderi.png',
   jobTitle: 'Frontend Software Engineer',
   aboutMe: [
     {
@@ -75,3 +76,7 @@ export const myInfo = {
     // },
   ],
 };
+
+export const homeSectionsIds = [
+  'whoAmI', 'aboutMe', 'sideProjects', 'lastArticles', 'contactMe',
+];
