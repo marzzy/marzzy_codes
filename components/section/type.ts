@@ -2,7 +2,7 @@ import { ReactNode } from 'react';
 
 export type SectionProps = {
     children: ReactNode
-    bgColor?: string
+    isSecondaryBg?: boolean
     sectionTag?: 'section' | 'header' | 'footer'
     styledClass?: string,
     sectionId?: string,
@@ -10,5 +10,5 @@ export type SectionProps = {
 };
 
 export type StylesProps = {
-    bgColor: string
+    isSecondaryBg: boolean
 };

@@ -2,6 +2,7 @@ import Section from 'components/section/section';
 import { myInfo, homeSectionsIds } from 'components/constants';
 import { makeStyles } from '@material-ui/styles';
 import ThemeType from 'types/theme';
+import { Text } from 'components/shared';
 
 const {
   fname, sname, photo, jobTitle,
@@ -60,12 +61,21 @@ function TitleSection(props: {sectionId: string}) {
       pageSectionIds={homeSectionsIds}
     >
       <div className={infoContainer}>
-        <h1>
+        <Text
+          tagName="h1"
+          size={60}
+        >
           {fname}
           <br />
           {sname}
-        </h1>
-        <h2>{jobTitle}</h2>
+        </Text>
+        <Text
+          tagName="h2"
+          size={30}
+          colorFromPallete="main.tertiary"
+        >
+          {jobTitle}
+        </Text>
       </div>
       <div className={heroImgContainer}>
         <img
