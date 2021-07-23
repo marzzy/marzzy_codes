@@ -18,16 +18,16 @@ const useStyles = makeStyles((theme: ThemeType) => ({
     width: '0',
     height: '0',
     margin: '5px 10px',
-    background: 'red',
+    background: theme.palette.accents.tertiary,
     borderRadius: '100%',
     padding: '10px',
     color: 'transparent',
     transition: '0.25s',
     '&.active': {
-      background: 'blue',
+      background: theme.palette.accents.primary,
     },
     '&:hover': {
-      background: 'green',
+      background: theme.palette.accents.primary,
     },
   },
   pagination: {

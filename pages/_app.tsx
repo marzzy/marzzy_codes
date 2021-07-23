@@ -14,11 +14,11 @@ export default function App({ Component, pageProps } : AppProps) {
       jssStyles.parentElement.removeChild(jssStyles);
     }
   }, []);
+
   // TODO: add provider to change theme
   return (
     <ThemeProvider theme={theme('dark')}>
       <Component {...pageProps} />
     </ThemeProvider>
   );
-  // return <Component {...pageProps} />;
 }
