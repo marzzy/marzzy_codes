@@ -1,7 +1,8 @@
 export const siteMeta = {
   title: 'Marzzy Codes - The Dev Girl',
   description: 'Marzzy Codes - A Dev Girl Routine',
-  logo: '/images/marzzy_code_logo.png',
+  logoLight: '/images/marzzy_code_logocard-light.png',
+  logoDark: '/images/marzzy_code_logocard-dark.png',
   favicon: '/favicon.ico',
 };
 

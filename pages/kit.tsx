@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import Logos from 'components/kit/logos';
+import { Logos, LogoCards } from 'components/kit/logos';
 import Palletes from 'components/kit/palletes';
 
 export default function Kit() {
@@ -19,6 +19,10 @@ export default function Kit() {
           <section>
             <h2>logos</h2>
             <Logos />
+          </section>
+          <section>
+            <h2>logo-cards</h2>
+            <LogoCards />
           </section>
         </main>
       </body>

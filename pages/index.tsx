@@ -3,7 +3,7 @@ import { siteMeta, myInfo, homeSectionsIds } from 'components/constants';
 import TitleSection from 'components/home/titleSection';
 
 const {
-  title, description, logo, favicon,
+  title, description, logoLight, favicon,
 } = siteMeta;
 const {
   aboutMe, sideProjects, articles, constactPoints,
@@ -20,10 +20,10 @@ export default function Home() {
         />
         <meta
           property="og:image"
-          content={logo}
+          content={logoLight}
         />
         <meta name="og:title" content={title} />
-        <meta name="twitter:card" content={logo} />
+        <meta name="twitter:card" content={logoLight} />
         <title>{title}</title>
       </Head>
       <body>
