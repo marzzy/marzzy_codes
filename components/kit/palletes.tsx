@@ -1,6 +1,6 @@
 import { colors } from 'theme';
 import useStyles, { Circle } from './styles';
-import { circlesInfo } from './constants';
+import { circlesInfo, palleteTypes } from './constants';
 
 function Palletes() {
   const styles = useStyles();
@@ -10,9 +10,9 @@ function Palletes() {
 
   return (
     <div className={root}>
-      {['light', 'dark'].map((themeType) => (
+      {palleteTypes.map((themeType) => (
         <div key={themeType} className={palleteContainer}>
-          <h2>{themeType}</h2>
+          <h3>{themeType}</h3>
           <ul className={cirContainer}>
             {circlesInfo.map((cirInfo) => {
               const { name, size } = cirInfo;

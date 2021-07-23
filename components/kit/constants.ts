@@ -4,3 +4,5 @@ export const circlesInfo = [
   { name: 'neutral', size: 'md' },
   { name: 'accents', size: 'sm' },
 ];
+
+export const palleteTypes = ['light', 'dark'];

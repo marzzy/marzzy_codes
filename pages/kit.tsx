@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import Logos from 'components/kit/logos';
 import Palletes from 'components/kit/palletes';
 
 export default function Kit() {
@@ -12,8 +13,12 @@ export default function Kit() {
       <body>
         <main>
           <section>
-            <h1>palletes</h1>
+            <h2>palletes</h2>
             <Palletes />
+          </section>
+          <section>
+            <h2>logos</h2>
+            <Logos />
           </section>
         </main>
       </body>
