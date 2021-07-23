@@ -1,6 +1,10 @@
+export type ColorLevelType = {
+  [innerKey in 'primary' | 'secondary' | 'tertiary']: string
+};
+
 type ThemeType = {
   palette: {
-    primary: string
+    [key in 'main' | 'neutral' | 'accents']: ColorLevelType
   },
   breakpoints: {
     values: {

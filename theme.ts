@@ -1,23 +1,15 @@
 import ThemeType from 'types/theme';
 
-// TODO: work on pallete
-// const colors = {
-//   dark: {
-//     main: { text: '#ff914d', bg: '#344f5c' },
-//     neutral: { text: '', bg: '' },
-//     accent: { text: '#ffffff', bg: '#ff914d' },
-//   },
-//   light: {
-//     main: { text: '#ff914d', bg: '#f6f1ee' },
-//   },
-// };
-
-const colors = {
-  dark: {
-    primary: '#000',
-  },
+export const colors = {
   light: {
-    primary: '#fff',
+    main: { primary: '#f6f1ee', secondary: '#ff914d', tertiary: '#344f5c' },
+    neutral: { primary: '#ffa771', secondary: '#2a3f4a', tertiary: '#5d727d' },
+    accents: { primary: '#2a3f4a', secondary: '#f8f4f1', tertiary: '#c5c1be' },
+  },
+  dark: {
+    main: { primary: '#2a3f4a', secondary: '#f6f1ee', tertiary: '#ff914d' },
+    neutral: { primary: '#cc743e', secondary: '#f8f4f1', tertiary: '#c5c1be' },
+    accents: { primary: '#c5c1be', secondary: '#2a3f4a', tertiary: '#5d727d' },
   },
 };
 
