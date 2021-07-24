@@ -2,7 +2,6 @@ import { makeStyles } from '@material-ui/styles';
 import ThemeType from 'types/theme';
 import { SectionProps, StylesProps } from './type';
 
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
 const useStyles = makeStyles((theme: ThemeType) => ({
   root: {
     backgroundColor: (
@@ -13,6 +12,7 @@ const useStyles = makeStyles((theme: ThemeType) => ({
     height: '100vh',
     overflow: 'hidden',
     paddingLeft: '30px',
+    position: 'relative',
   },
   dot: {
     width: '0',
