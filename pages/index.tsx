@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import { siteMeta, myInfo, homeSectionsIds } from 'components/constants';
-import { TitleSection, AboutMeSection } from 'components/home';
+import { TitleSection, AboutMeSection, SideProjectsSection } from 'components/home';
 
 const {
   title, description, logoLight, favicon,
@@ -30,26 +30,7 @@ export default function Home() {
         <main>
           <TitleSection sectionId={homeSectionsIds[0]} />
           <AboutMeSection sectionId={homeSectionsIds[1]} />
-          <section>
-            <h4>My side projects</h4>
-            <span>there are some of my side projects, that I work on them in my free times</span>
-            <ul>
-              {sideProjects.map((project) => {
-                const {
-                  metaName, name: projectName, coverImage, link,
-                } = project;
-
-                return (
-                  <a href={link}>
-                    <li key={metaName}>
-                      {projectName}
-                      <img src={coverImage} alt={metaName} />
-                    </li>
-                  </a>
-                );
-              })}
-            </ul>
-          </section>
+          <SideProjectsSection sectionId={homeSectionsIds[2]} />
           <section>
             <h4>My articles</h4>
             <ul>
