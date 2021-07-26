@@ -1,12 +1,10 @@
-import { makeStyles } from '@material-ui/styles';
+import { makeStyles, styled } from '@material-ui/styles';
 import ThemeType from 'types/theme';
 
 const useStyles = makeStyles((theme: ThemeType) => ({
   root: {
     display: 'flex',
     flexDirection: 'column',
-    // [theme.breakpoints.down('md')]: {
-    // },
   },
   contentcContainer: {
     display: 'flex',
@@ -20,7 +18,7 @@ const useStyles = makeStyles((theme: ThemeType) => ({
       display: 'none',
     },
   },
-  textContainer: {
+  liContainer: {
     width: '95%',
     padding: '0 30px',
     display: 'flex',
@@ -36,6 +34,13 @@ const useStyles = makeStyles((theme: ThemeType) => ({
     width: '100%',
     height: '10vh',
   },
+  liStyle: {
+    background: 'red',
+  },
 }));
+
+export const Li = styled('li')({
+  // background: ({ imgSrc }) => `url("${imgSrc}")`,
+});
 
 export default useStyles;

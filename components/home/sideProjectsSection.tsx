@@ -1,7 +1,7 @@
 import Section from 'components/section/section';
 import { myInfo, homeSectionsIds } from 'components/constants';
 import { Text } from 'components/shared';
-import useStyles from './sideProjectsSectionStyles';
+import useStyles, { Li } from './sideProjectsSectionStyles';
 
 const {
   sideProjects,
@@ -11,7 +11,7 @@ const {
 function SideProjectsSection(props: {sectionId: string}) {
   const { sectionId } = props;
   const {
-    root, descriptionContainer, textContainer, header, contentcContainer,
+    root, descriptionContainer, liContainer, header, contentcContainer, liStyle,
   } = useStyles();
 
   return (
@@ -38,21 +38,21 @@ function SideProjectsSection(props: {sectionId: string}) {
             there are some of my side projects, that I work on them in my free times
           </Text>
         </div>
-        <ul className={textContainer}>
+        <ul className={liContainer}>
           {sideProjects.map((project) => {
             const {
               metaName, name: projectName, coverImage, link,
             } = project;
 
             return (
-              <li key={metaName}>
+              <Li className={liStyle} key={metaName}>
                 <a href={link}>
                   <Text colorFromPallete="main.secondary" size={25}>
                     {projectName}
                   </Text>
                   <img src={coverImage} alt={metaName} />
                 </a>
-              </li>
+              </Li>
             );
           })}
         </ul>
