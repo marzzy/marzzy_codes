@@ -7,11 +7,11 @@ const {
   sideProjects,
 } = myInfo;
 
-// TODO: set background img instead of img if you can
+// TODO: make 'ul li' slider > https://betterprogramming.pub/build-an-image-slider-with-react-es6-264368de68e4
 function SideProjectsSection(props: {sectionId: string}) {
   const { sectionId } = props;
   const {
-    root, descriptionContainer, liContainer, header, contentcContainer, liStyle,
+    root, descriptionContainer, liContainer, header, contentcContainer,
   } = useStyles();
 
   return (
@@ -22,9 +22,10 @@ function SideProjectsSection(props: {sectionId: string}) {
     >
       <Text
         tagName="h3"
-        size={40}
+        size={35}
         colorFromPallete="main.tertiary"
         classStyles={header}
+        verticallyCenterilize
       >
         My Sides Projects
       </Text>
@@ -45,12 +46,11 @@ function SideProjectsSection(props: {sectionId: string}) {
             } = project;
 
             return (
-              <Li className={liStyle} key={metaName}>
+              <Li key={metaName} imgSrc={coverImage}>
                 <a href={link}>
-                  <Text colorFromPallete="main.secondary" size={25}>
+                  <Text colorFromPallete="main.secondary" size={30}>
                     {projectName}
                   </Text>
-                  <img src={coverImage} alt={metaName} />
                 </a>
               </Li>
             );

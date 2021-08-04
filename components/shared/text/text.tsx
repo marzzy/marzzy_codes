@@ -11,22 +11,28 @@ const useStyles = makeStyles((theme : ThemeType) => ({
       return theme.palette[firstItem][secoundItem];
     },
   },
+  verticalCentrize: {
+    display: 'flex',
+    alignItems: 'center',
+  },
 }));
 
 function Text(props: TextProps) {
   const {
-    tagName: TagName, size, colorFromPallete, children, classStyles,
+    tagName: TagName, size, colorFromPallete, children, classStyles, verticallyCenterilize,
   } = props;
-  const { textStyle } = useStyles({ size, colorFromPallete });
+  const { textStyle, verticalCentrize } = useStyles({ size, colorFromPallete });
 
   return (
-    <div>
-      <TagName
-        className={`${textStyle} ${classStyles}`}
-      >
-        {children}
-      </TagName>
-    </div>
+    <TagName
+      className={`
+        ${textStyle}
+        ${classStyles} 
+        ${verticallyCenterilize ? verticalCentrize : ''}
+      `}
+    >
+      {children}
+    </TagName>
   );
 }
 
@@ -35,6 +41,7 @@ Text.defaultProps = {
   size: 16,
   colorFromPallete: 'main.secondary',
   classStyles: '',
+  verticallyCenterilize: false,
 };
 
 export default Text;

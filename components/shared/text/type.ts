@@ -5,7 +5,8 @@ export type TextProps = {
     colorFromPallete?: string
     size?: number,
     tagName?: 'p' | 'span' | 'h1' | 'h2' | 'h3' | 'h4'| 'h5' | 'h6',
-    classStyles?: string
+    classStyles?: string,
+    verticallyCenterilize: boolean
 };
 
 export type StylesProps = {
