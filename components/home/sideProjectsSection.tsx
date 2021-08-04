@@ -2,13 +2,14 @@ import Section from 'components/section/section';
 import { myInfo, homeSectionsIds } from 'components/constants';
 import { Text } from 'components/shared';
 import useStyles, { Li } from './sideProjectsSectionStyles';
+import { SectionProps } from './type';
 
 const {
   sideProjects,
 } = myInfo;
 
 // TODO: make 'ul li' slider > https://betterprogramming.pub/build-an-image-slider-with-react-es6-264368de68e4
-function SideProjectsSection(props: {sectionId: string}) {
+function SideProjectsSection(props: SectionProps) {
   const { sectionId } = props;
   const {
     root, descriptionContainer, liContainer, header, contentcContainer,

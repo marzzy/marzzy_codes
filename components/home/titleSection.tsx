@@ -2,13 +2,14 @@ import Section from 'components/section/section';
 import { myInfo, homeSectionsIds } from 'components/constants';
 import { Text } from 'components/shared';
 import useStyles from './titleSectionStyles';
+import { SectionProps } from './type';
 
 const {
   fname, sname, photo, jobTitle,
 } = myInfo;
 
 // TODO: use nextjs img
-function TitleSection(props: {sectionId: string}) {
+function TitleSection(props: SectionProps) {
   const { sectionId } = props;
   const {
     root, infoContainer, heroImgContainer,

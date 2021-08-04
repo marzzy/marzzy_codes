@@ -1,12 +1,14 @@
 import Head from 'next/head';
 import { siteMeta, myInfo, homeSectionsIds } from 'components/constants';
-import { TitleSection, AboutMeSection, SideProjectsSection } from 'components/home';
+import {
+  TitleSection, AboutMeSection, SideProjectsSection, ArticlesSection,
+} from 'components/home';
 
 const {
   title, description, logoLight, favicon,
 } = siteMeta;
 const {
-  sideProjects, articles, constactPoints,
+  constactPoints,
 } = myInfo;
 
 export default function Home() {
@@ -31,32 +33,7 @@ export default function Home() {
           <TitleSection sectionId={homeSectionsIds[0]} />
           <AboutMeSection sectionId={homeSectionsIds[1]} />
           <SideProjectsSection sectionId={homeSectionsIds[2]} />
-          <section>
-            <h4>My articles</h4>
-            <ul>
-              {articles.map((article) => {
-                const {
-                  metaName, title: articleTitle, coverImage, link, summary,
-                } = article;
-
-                return (
-                  <a href={link}>
-                    <li key={metaName}>
-                      <article>
-                        <img src={coverImage} alt={metaName} />
-                        <p>
-                          {summary}
-                        </p>
-                        <h5>
-                          {articleTitle}
-                        </h5>
-                      </article>
-                    </li>
-                  </a>
-                );
-              })}
-            </ul>
-          </section>
+          <ArticlesSection sectionId={homeSectionsIds[3]} />
           <footer>
             <h4>
               You can reach Marzzy at
