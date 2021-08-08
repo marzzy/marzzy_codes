@@ -18,7 +18,7 @@ export const myInfo = {
     },
     {
       area: 'life-style',
-      text: "I enjoy creating things from nothing, It feels awesome when you see the final product makes other people's lives better or makes life easier for other developers. When I'm not struggling with code, you'll find me taking care of my plants, doing Arial-yoga, swimming, or baking delicious cakes.",
+      text: "I enjoy creating things from nothing, It feels awesome when you see the final product makes other people's lives better or makes life easier for other developers. When I'm not struggling with code, you'll find me taking care of my plants, doing Arial-yoga, swimming, or spending time with my family.",
     },
   ],
   sideProjects: [

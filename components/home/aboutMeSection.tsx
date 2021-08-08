@@ -23,9 +23,7 @@ function AboutMeSection(props: SectionProps) {
       pageSectionIds={homeSectionsIds}
       isSecondaryBg
     >
-      <div className={imgContainer}>
-        img
-      </div>
+      <div className={imgContainer} />
       <div className={textContainer}>
         <Text
           tagName="h3"
