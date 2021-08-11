@@ -17,6 +17,7 @@ const useStyles = makeStyles((theme: ThemeType) => ({
     backgroundSize: 'cover',
     alignSelf: 'end',
     [theme.breakpoints.down('md')]: {
+      height: '100vh',
       bottom: 0,
       position: 'absolute',
       width: '100%',
@@ -27,27 +28,16 @@ const useStyles = makeStyles((theme: ThemeType) => ({
   },
   textContainer: {
     width: '95%',
-    padding: '0 30px',
-    zIndex: 2,
+    padding: '20px 30px',
+    zIndex: 1,
     [theme.breakpoints.down('md')]: {
-      opacity: '80%',
-      position: 'relative',
-      '&:before': {
-        content: 'attr(title)',
-        position: 'absolute',
-        pointerEvents: 'none',
-        width: '100%',
-        height: '100%',
-        right: 0,
-        background: `-webkit-radial-gradient(${theme.palette.main.secondary} 80%, transparent 100%)`,
-        zIndex: -1,
-      },
-      '& p': {
-        fontSize: '20px',
-      },
+      '& p': { fontSize: '20px', margin: '12px 0' },
+      width: '100%',
+      background: `${theme.palette.main.secondary}cc`,
+      borderRadius: '0 0 0 20px',
     },
     [theme.breakpoints.down('sm')]: {
-      padding: 0,
+      padding: '20px 10px',
     },
     [theme.breakpoints.down('xs')]: {
       opacity: '100%',
