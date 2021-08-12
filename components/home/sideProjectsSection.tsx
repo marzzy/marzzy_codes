@@ -47,7 +47,7 @@ function SideProjectsSection(props: SectionProps) {
             } = project;
 
             return (
-              <Li key={metaName} imgSrc={coverImage}>
+              <Li key={metaName} imgsrc={coverImage}>
                 <a href={link}>
                   <Text colorFromPallete="main.secondary" size={30}>
                     {projectName}

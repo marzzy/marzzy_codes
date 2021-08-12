@@ -30,8 +30,8 @@ function ArticlesSection(props: SectionProps) {
           } = article;
 
           return (
-            <a href={link}>
-              <li key={metaName}>
+            <li key={metaName}>
+              <a href={link}>
                 <article>
                   <img src={coverImage} alt={metaName} />
                   <p>
@@ -41,8 +41,8 @@ function ArticlesSection(props: SectionProps) {
                     {articleTitle}
                   </h5>
                 </article>
-              </li>
-            </a>
+              </a>
+            </li>
           );
         })}
       </ul>

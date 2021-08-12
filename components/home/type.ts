@@ -1,5 +1,5 @@
 export type LiProps = {
-  imgSrc: string
+  imgsrc: string
 };
 
 export type SectionProps = {

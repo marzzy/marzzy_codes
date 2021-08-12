@@ -46,7 +46,7 @@ const useStyles = makeStyles((theme: ThemeType) => ({
 }));
 
 export const Li = styled('li')({
-  backgroundImage: ({ imgSrc }: LiProps) => `url("${imgSrc}")`,
+  backgroundImage: ({ imgsrc }: LiProps) => `url("${imgsrc}")`,
   backgroundPosition: 'center',
   backgroundSize: 'cover',
   width: 'calc(100% / 3)',

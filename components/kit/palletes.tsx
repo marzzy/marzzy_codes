@@ -20,6 +20,7 @@ function Palletes() {
 
               return (
                 <Circle
+                  key={name}
                   className={`${generalCir} ${styles[cirClassName]}`}
                   cirColors={colors[themeType][name]}
                 >
