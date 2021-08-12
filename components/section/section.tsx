@@ -7,7 +7,7 @@ const useStyles = makeStyles((theme: ThemeType) => ({
     backgroundColor: (
       { isSecondaryBg } : StylesProps,
     ) => (isSecondaryBg
-      ? theme.palette.main.secondary : theme.palette.main.primary
+      ? theme.palette.accents.primary : theme.palette.main.primary
     ),
     height: '100vh',
     overflow: 'hidden',
@@ -24,10 +24,10 @@ const useStyles = makeStyles((theme: ThemeType) => ({
     color: 'transparent',
     transition: '0.25s',
     '&.active': {
-      background: theme.palette.accents.primary,
+      background: theme.palette.neutral.primary,
     },
     '&:hover': {
-      background: theme.palette.accents.primary,
+      background: theme.palette.neutral.primary,
     },
   },
   pagination: {

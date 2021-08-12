@@ -19,7 +19,7 @@ function ArticlesSection(props: SectionProps) {
       <Text
         tagName="h3"
         size={40}
-        colorFromPallete="main.tertiary"
+        colorFromPallete="accents.tertiary"
       >
         My articles
       </Text>
@@ -34,9 +34,9 @@ function ArticlesSection(props: SectionProps) {
               <a href={link}>
                 <article>
                   <img src={coverImage} alt={metaName} />
-                  <p>
+                  <Text colorFromPallete="accents.secondary">
                     {summary}
-                  </p>
+                  </Text>
                   <h5>
                     {articleTitle}
                   </h5>

@@ -28,12 +28,12 @@ function AboutMeSection(props: SectionProps) {
         <Text
           tagName="h3"
           size={40}
-          colorFromPallete="main.tertiary"
+          colorFromPallete="accents.tertiary"
         >
           about me
         </Text>
         {aboutMe.map(({ area, text }) => (
-          <Text colorFromPallete="main.primary" key={area} size={25}>
+          <Text colorFromPallete="accents.secondary" key={area} size={25}>
             {text}
           </Text>
         ))}

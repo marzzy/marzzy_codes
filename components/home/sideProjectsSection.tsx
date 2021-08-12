@@ -24,7 +24,7 @@ function SideProjectsSection(props: SectionProps) {
       <Text
         tagName="h3"
         size={35}
-        colorFromPallete="main.tertiary"
+        colorFromPallete="main.secondary"
         classStyles={header}
         verticallyCenterilize
       >
@@ -35,7 +35,7 @@ function SideProjectsSection(props: SectionProps) {
           <Text
             tagName="span"
             size={15}
-            colorFromPallete="main.secondary"
+            colorFromPallete="main.tertiary"
           >
             there are some of my side projects, that I work on them in my free times
           </Text>
