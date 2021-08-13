@@ -1,5 +1,5 @@
 import Section from 'components/section/section';
-import { Text } from 'components/shared';
+import { Text, Button } from 'components/shared';
 import { myInfo, homeSectionsIds } from 'components/constants';
 import useStyles from './aboutMeSectionStyles';
 import { SectionProps } from './type';
@@ -8,8 +8,6 @@ const {
   aboutMe,
 } = myInfo;
 
-// TODO: style button in share components
-// TODO: set background img instead of img if you can
 function AboutMeSection(props: SectionProps) {
   const { sectionId } = props;
   const {
@@ -37,7 +35,7 @@ function AboutMeSection(props: SectionProps) {
             {text}
           </Text>
         ))}
-        <button type="button">CONTACT ME</button>
+        <Button styleType="secondary">CONTACT ME</Button>
       </div>
     </Section>
   );
