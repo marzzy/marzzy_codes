@@ -22,21 +22,19 @@ const useStyles = makeStyles((theme: ThemeType) => ({
     },
   },
   textContainer: {
-    padding: '20px 30px',
+    padding: '30px',
     zIndex: 1,
     width: '100%',
     background: `${theme.palette.main.primary}ee`,
-    borderRadius: '20px 0 0 20px',
     marginBottom: '200px',
-    '& p': { margin: '12px 0' },
-    marginLeft: '40px',
-    [theme.breakpoints.down('sm')]: {
-      padding: '20px 10px',
-    },
     [theme.breakpoints.down('xs')]: {
       opacity: '100%',
     },
   },
+  iconStyle: {
+    fontSize: '70px',
+  },
+  headerStyle: { margin: '12px 0' },
 }));
 
 export default useStyles;

@@ -10,7 +10,9 @@ const {
 
 function ContactSection(props: SectionProps) {
   const { sectionId } = props;
-  const { root, imgContainer, textContainer } = useStyles();
+  const {
+    root, imgContainer, textContainer, iconStyle, headerStyle,
+  } = useStyles();
 
   return (
     <Section
@@ -26,6 +28,7 @@ function ContactSection(props: SectionProps) {
           size={40}
           colorFromPallete="main.secondary"
           // tertiary
+          classStyles={headerStyle}
         >
           You can reach Marzzy at
         </Text>
@@ -36,7 +39,7 @@ function ContactSection(props: SectionProps) {
             return (
             // eslint-disable-next-line react/jsx-no-target-blank
               <a href={href} target="_blank" title={label} key={label}>
-                <i className={`icon-${iconName}`}>
+                <i className={`icon-${iconName} ${iconStyle}`}>
                   <span className="path1" />
                   <span className="path2" />
                 </i>

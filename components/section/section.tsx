@@ -28,7 +28,10 @@ const useStyles = makeStyles((theme: ThemeType) => ({
     },
     '&:hover': {
       background: theme.palette.neutral.primary,
+      boxShadow: `0 0 4px 1px ${theme.palette.neutral.tertiary}`,
     },
+    zIndex: 3,
+    boxShadow: `0 0 3px 0 ${theme.palette.neutral.tertiary}`,
   },
   pagination: {
     position: 'absolute',
