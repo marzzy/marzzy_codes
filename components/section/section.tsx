@@ -1,5 +1,7 @@
+import { useContext } from 'react';
 import { makeStyles } from '@material-ui/styles';
 import ThemeType from 'types/theme';
+import Mode from 'context/theme';
 import { SectionProps, StylesProps } from './type';
 
 const useStyles = makeStyles((theme: ThemeType) => ({
@@ -52,11 +54,15 @@ function Section(props: SectionProps) {
     pageSectionIds,
   } = props;
   const { root, dot, pagination } = useStyles({ isSecondaryBg });
+  const { toggleMode, mode } = useContext(Mode);
 
   return (
     <SectionTag className={`${root} ${styledClass}`} id={sectionId}>
       {children}
       <div className={pagination}>
+        <button type="button" onClick={toggleMode}>
+          {mode}
+        </button>
         {pageSectionIds.map((theSection) => (
           <a
             href={`#${theSection}`}
