@@ -67,14 +67,13 @@ export const myInfo = {
     {
       href: 'https://stackoverflow.com/story/marzzy',
       label: 'Marzieh Moghtaderi stackoverflow - stackoverflow.com/story/marzzy',
-      iconName: 'stackoverflow',
+      iconName: 'stack-overflow',
     },
-    // TODO: change instagram link and add it here
-    // {
-    //   href: 'marzzy.m@gmail.com',
-    //   label: 'Marzieh Moghtaderi instagram - marzzy.m@gmail.com',
-    //   iconName: 'insta',
-    // },
+    {
+      href: 'https://instagram.com/marzzy_codes?utm_medium=website',
+      label: 'Marzieh Moghtaderi instagram - marzzy_codes',
+      iconName: 'instagram',
+    },
   ],
 };
 

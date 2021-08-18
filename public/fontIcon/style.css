@@ -1,18 +1,18 @@
 @font-face {
-  font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?fo1cgi');
-  src:  url('fonts/icomoon.eot?fo1cgi#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?fo1cgi') format('truetype'),
-    url('fonts/icomoon.woff?fo1cgi') format('woff'),
-    url('fonts/icomoon.svg?fo1cgi#icomoon') format('svg');
+  font-family: 'fontIcon';
+  src:  url('fonts/fontIcon.eot?1p5z0l');
+  src:  url('fonts/fontIcon.eot?1p5z0l#iefix') format('embedded-opentype'),
+    url('fonts/fontIcon.ttf?1p5z0l') format('truetype'),
+    url('fonts/fontIcon.woff?1p5z0l') format('woff'),
+    url('fonts/fontIcon.svg?1p5z0l#fontIcon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
 }
 
-[class^="icon-"], [class*=" icon-"] {
+[class^="i-"], [class*=" i-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: 'icomoon' !important;
+  font-family: 'fontIcon' !important;
   speak: never;
   font-style: normal;
   font-weight: normal;
@@ -25,27 +25,27 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-stackoverflow .path1:before {
+.i-stack-overflow:before {
   content: "\e900";
-  color: rgb(0, 0, 0);
 }
-.icon-stackoverflow .path2:before {
+.i-moon:before {
   content: "\e901";
-  margin-left: -1em;
-  color: rgb(255, 255, 255);
 }
-.icon-github:before {
+.i-sun:before {
   content: "\e902";
 }
-.icon-insta:before {
+.i-mail:before {
   content: "\e903";
 }
-.icon-arrow-down:before {
-  content: "\ea3e";
+.i-instagram:before {
+  content: "\e904";
 }
-.icon-mail:before {
-  content: "\ea83";
+.i-github:before {
+  content: "\e905";
 }
-.icon-linkedin:before {
-  content: "\eac9";
+.i-phone:before {
+  content: "\e906";
+}
+.i-linkedin:before {
+  content: "\e907";
 }

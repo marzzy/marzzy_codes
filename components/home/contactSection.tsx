@@ -39,10 +39,7 @@ function ContactSection(props: SectionProps) {
             return (
             // eslint-disable-next-line react/jsx-no-target-blank
               <a href={href} target="_blank" title={label} key={label}>
-                <i className={`icon-${iconName} ${iconStyle}`}>
-                  <span className="path1" />
-                  <span className="path2" />
-                </i>
+                <i className={`i-${iconName} ${iconStyle}`} />
               </a>
             );
           })}
