@@ -11,7 +11,7 @@ const {
 function ContactSection(props: SectionProps) {
   const { sectionId } = props;
   const {
-    root, imgContainer, textContainer, iconStyle, headerStyle,
+    root, imgContainer, textContainer, iconStyle, headerStyle, socialWrapper, socialLinks,
   } = useStyles();
 
   return (
@@ -32,13 +32,19 @@ function ContactSection(props: SectionProps) {
         >
           You can reach Marzzy at
         </Text>
-        <address>
+        <address className={socialWrapper}>
           {constactPoints.map((contactPoint) => {
             const { href, label, iconName } = contactPoint;
 
             return (
             // eslint-disable-next-line react/jsx-no-target-blank
-              <a href={href} target="_blank" title={label} key={label}>
+              <a
+                className={socialLinks}
+                href={href}
+                target="_blank"
+                title={label}
+                key={label}
+              >
                 <i className={`i-${iconName} ${iconStyle}`} />
               </a>
             );

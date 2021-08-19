@@ -35,6 +35,37 @@ const useStyles = makeStyles((theme: ThemeType) => ({
     fontSize: '70px',
   },
   headerStyle: { margin: '12px 0' },
+  socialLinks: {
+    color: theme.palette.main.tertiary,
+    display: 'block',
+    transition: 'all 1s',
+    padding: '12px',
+    '&:hover': {
+      textDecoration: 'none',
+      '&::after': {
+        boxShadow: '0 0 7px 1px black',
+        marginTop: '10px',
+        [theme.breakpoints.down('sm')]: {
+          display: 'none',
+        },
+      },
+    },
+    '&::after': {
+      content: '""',
+      display: 'block',
+      width: '100%',
+      boxShadow: '0 0 7px 1px transparent',
+      transition: 'all 0.5s',
+    },
+  },
+  socialWrapper: {
+    display: 'flex',
+    flexWrap: 'wrap',
+    justifyContent: 'space-evenly',
+    alignItems: 'end',
+    maxWidth: '800px',
+    minHeight: '120px',
+  },
 }));
 
 export default useStyles;
