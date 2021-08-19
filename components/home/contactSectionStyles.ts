@@ -6,7 +6,7 @@ const useStyles = makeStyles((theme: ThemeType) => ({
     display: 'flex',
     position: 'relative',
     alignItems: 'center',
-    padding: 0,
+    padding: '0 !important',
   },
   imgContainer: {
     backgroundImage: 'url("/images/marzzy-codes.jpg")',

@@ -10,5 +10,6 @@ export type SectionProps = {
 };
 
 export type StylesProps = {
-    isSecondaryBg: boolean
+    isSecondaryBg: boolean,
+    mode: 'dark' | 'light'
 };
