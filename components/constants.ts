@@ -70,7 +70,7 @@ export const myInfo = {
       iconName: 'stack-overflow',
     },
     {
-      href: 'https://instagram.com/marzzy_codes?utm_medium=website',
+      href: 'https://instagram.com/marzzy_codes',
       label: 'Marzieh Moghtaderi instagram - marzzy_codes',
       iconName: 'instagram',
     },
@@ -78,5 +78,9 @@ export const myInfo = {
 };
 
 export const homeSectionsIds = [
-  'whoAmI', 'aboutMe', 'sideProjects', 'lastArticles', 'contactMe',
+  'whoAmI',
+  'aboutMe',
+  // 'sideProjects',
+  // 'lastArticles',
+  'contactMe',
 ];

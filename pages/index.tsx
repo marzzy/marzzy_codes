@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import { siteMeta, homeSectionsIds } from 'components/constants';
 import {
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   TitleSection, AboutMeSection, SideProjectsSection, ArticlesSection, ContactSection,
 } from 'components/home';
 
@@ -29,9 +30,9 @@ export default function Home() {
         <main>
           <TitleSection sectionId={homeSectionsIds[0]} />
           <AboutMeSection sectionId={homeSectionsIds[1]} />
-          <SideProjectsSection sectionId={homeSectionsIds[2]} />
-          <ArticlesSection sectionId={homeSectionsIds[3]} />
-          <ContactSection sectionId={homeSectionsIds[4]} />
+          {/* <SideProjectsSection sectionId={homeSectionsIds[2]} /> */}
+          {/* <ArticlesSection sectionId={homeSectionsIds[3]} /> */}
+          <ContactSection sectionId={homeSectionsIds[2]} />
         </main>
       </body>
     </div>
