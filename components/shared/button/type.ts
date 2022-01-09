@@ -6,7 +6,8 @@ export type ButtonProps = {
     styleType?: 'primary' | 'secondary' | 'tertiary',
     disabled?: boolean
     buttonType?: 'button' | 'reset' | 'submit',
-    fnSize?: number
+    fnSize?: number,
+    to?: string
 };
 
 export type StylesProps = {

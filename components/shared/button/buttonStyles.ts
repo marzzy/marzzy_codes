@@ -17,6 +17,7 @@ const useStyles = makeStyles((theme : ThemeType) => {
       fontSize: (({ fnSize }: StylesProps) => `${fnSize}px`),
       '&:hover': {
         cursor: (({ disabled } : StylesProps) => (disabled ? 'not-allowed' : 'pointer')),
+        textDecoration: 'none',
       },
       '&:before': {
         content: (({ disabled } : StylesProps) => (disabled ? '""' : '')),

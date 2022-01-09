@@ -35,7 +35,7 @@ function AboutMeSection(props: SectionProps) {
             {text}
           </Text>
         ))}
-        <Button styleType="secondary">CONTACT ME</Button>
+        <Button styleType="secondary" to="#contactMe">CONTACT ME</Button>
       </div>
     </Section>
   );
