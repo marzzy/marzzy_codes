@@ -65,8 +65,8 @@ export const myInfo = {
       iconName: 'github',
     },
     {
-      href: 'https://stackoverflow.com/story/marzzy',
-      label: 'Marzieh Moghtaderi stackoverflow - stackoverflow.com/story/marzzy',
+      href: 'https://stackoverflow.com/users/6514448/marzzy',
+      label: 'Marzieh Moghtaderi stackoverflow - https://stackoverflow.com/users/6514448/marzzy',
       iconName: 'stack-overflow',
     },
     {
