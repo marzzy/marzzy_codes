@@ -5,13 +5,13 @@ import Buttons from 'components/kit/buttons';
 
 export default function Kit() {
   return (
-    <div>
+    <>
       <Head>
         <meta name="robots" content="noindex, nofollow" />
         <meta name="robots" content="noarchive" />
         <title>Marzzy Code Kit</title>
       </Head>
-      <body>
+      <div className='the-body-class'>
         <main>
           <section>
             <h2>palletes</h2>
@@ -30,7 +30,7 @@ export default function Kit() {
             <Buttons />
           </section>
         </main>
-      </body>
-    </div>
+      </div>
+    </>
   );
 }

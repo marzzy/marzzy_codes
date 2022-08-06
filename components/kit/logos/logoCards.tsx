@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import { siteMeta } from 'components/constants';
 import useStyles from './styles';
 

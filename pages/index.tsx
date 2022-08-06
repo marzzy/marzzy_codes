@@ -1,7 +1,6 @@
 import Head from 'next/head';
 import { siteMeta, homeSectionsIds } from 'components/constants';
 import {
-  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   TitleSection, AboutMeSection, SideProjectsSection, ArticlesSection, ContactSection,
 } from 'components/home';
 
@@ -11,7 +10,7 @@ const {
 
 export default function Home() {
   return (
-    <div>
+    <>
       <Head>
         <link rel="icon" href={favicon} />
         <meta
@@ -26,7 +25,7 @@ export default function Home() {
         <meta name="twitter:card" content={logoLight} />
         <title>{title}</title>
       </Head>
-      <body>
+      <div className="the-body-class">
         <main>
           <TitleSection sectionId={homeSectionsIds[0]} />
           <AboutMeSection sectionId={homeSectionsIds[1]} />
@@ -34,7 +33,7 @@ export default function Home() {
           {/* <ArticlesSection sectionId={homeSectionsIds[3]} /> */}
           <ContactSection sectionId={homeSectionsIds[2]} />
         </main>
-      </body>
-    </div>
+      </div>
+    </>
   );
 }

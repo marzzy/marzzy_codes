@@ -22,7 +22,7 @@ function Palletes() {
                 <Circle
                   key={name}
                   className={`${generalCir} ${styles[cirClassName]}`}
-                  cirColors={colors[themeType][name]}
+                  circolors={colors[themeType][name]}
                 >
                   <h3>
                     {name}

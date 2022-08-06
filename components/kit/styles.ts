@@ -2,12 +2,12 @@ import { makeStyles, styled } from '@material-ui/styles';
 import { StylesProps } from './type';
 
 export const Circle = styled('li')({
-  background: ({ cirColors }: StylesProps) => cirColors.primary,
+  background: ({ circolors }: StylesProps) => circolors.primary,
   '& > h3': {
-    color: ({ cirColors }: StylesProps) => cirColors.secondary,
+    color: ({ circolors }: StylesProps) => circolors.secondary,
   },
   '& > h4': {
-    color: ({ cirColors }: StylesProps) => cirColors.tertiary,
+    color: ({ circolors }: StylesProps) => circolors.tertiary,
   },
 });
 

@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import Section from 'components/section/section';
 import { myInfo, homeSectionsIds } from 'components/constants';
 import { Text } from 'components/shared';
