@@ -27,10 +27,9 @@ function ContactSection(props: SectionProps) {
           tagName="h4"
           size={40}
           colorFromPallete="main.secondary"
-          // tertiary
           classStyles={headerStyle}
         >
-          You can reach Marzzy at
+          Get in touch with me
         </Text>
         <address className={socialWrapper}>
           {constactPoints.map((contactPoint) => {

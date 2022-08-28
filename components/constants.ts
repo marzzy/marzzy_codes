@@ -1,6 +1,6 @@
 export const siteMeta = {
-  title: 'Marzzy Codes - The Dev Girl',
-  description: 'Marzzy Codes - A Dev Girl Routine',
+  title: 'Marzzy Codes - Marzieh Moghtaderi - Senior Software Engineer',
+  description: 'Marzzy Codes - Marzieh Moghtaderi - Senior Software Engineer',
   logoLight: '/images/marzzy_code_logocard-light.png',
   logoDark: '/images/marzzy_code_logocard-dark.png',
   favicon: '/favicon.ico',
@@ -10,15 +10,18 @@ export const myInfo = {
   fname: 'Marzieh',
   sname: 'Moghtaderi',
   photo: '/images/Marzieh-Moghtaderi.png',
-  jobTitle: 'Frontend Software Engineer',
+  jobTitle: 'Senior Software Engineer',
   aboutMe: [
     {
       area: 'career',
-      text: 'I am a front-end software engineer for more than 5 years, skilled in JavaScript, and React, and responsive web design.',
+      text: 'I am an experienced senior front-end software engineer, skilled in JavaScript, Typescript, and React.',
+    },{
+      area: 'career goal and services',
+      text: 'I contribute to software companies in building and developing their web-based products. Junior engineers can find me as a mentor who likes to help and lead them to grow in their careers.',
     },
     {
       area: 'life-style',
-      text: "I enjoy creating things from nothing, It feels awesome when you see the final product makes other people's lives better or makes life easier for other developers. When I'm not struggling with code, you'll find me taking care of my plants, doing Arial-yoga, swimming, or spending time with my family.",
+      text: "When I'm not struggling with code, you'll find me taking care of my plants, doing arial-yoga, swimming, or spending time with my family.",
     },
   ],
   sideProjects: [
@@ -52,10 +55,6 @@ export const myInfo = {
   ],
   constactPoints: [
     {
-      href: 'mailto:marzzy.m@gmail.com',
-      label: 'Marzieh Moghtaderi email - marzzy.m@gmail.com',
-      iconName: 'mail',
-    }, {
       href: 'https://linkedin.com/in/marzzy',
       label: 'Marzieh Moghtaderi linkedin -  linkedin.com/in/marzzy',
       iconName: 'linkedin',
@@ -73,7 +72,11 @@ export const myInfo = {
       href: 'https://instagram.com/marzzy_codes',
       label: 'Marzieh Moghtaderi instagram - marzzy_codes',
       iconName: 'instagram',
-    },
+    }, {
+      href: 'mailto:marzzy.m@gmail.com',
+      label: 'Marzieh Moghtaderi email - marzzy.m@gmail.com',
+      iconName: 'mail',
+    }
   ],
 };
 

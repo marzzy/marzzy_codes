@@ -2,14 +2,14 @@ import ThemeType from 'types/theme';
 
 export const colors = {
   light: {
-    main: { primary: '#f6f1ee', secondary: '#ff914d', tertiary: '#344f5c' },
-    neutral: { primary: '#ffa771', secondary: '#2a3f4a', tertiary: '#5d727d' },
-    accents: { primary: '#2a3f4a', secondary: '#f8f4f1', tertiary: '#c5c1be' },
+    main: { primary: '#845EC2', secondary: '#FFC75F', tertiary: '#F9F871' },
+    neutral: { primary: '#503181', secondary: '#FF5E78', tertiary: '#F98B00' },
+    accents: { primary: '#b8a3dc', secondary: '#FFFFC1', tertiary: 'rgb(189, 105, 0)' },
   },
   dark: {
-    main: { primary: '#2a3f4a', secondary: '#f6f1ee', tertiary: '#ff914d' },
-    neutral: { primary: '#cc743e', secondary: '#f8f4f1', tertiary: '#c5c1be' },
-    accents: { primary: '#c5c1be', secondary: '#2a3f4a', tertiary: '#5d727d' },
+    main: { primary: '#202040' , secondary: '#FF6363', tertiary: '#613d76'},
+    neutral: { primary: '#6666b2', secondary: '#FFBD69', tertiary: '#c4add1' },
+    accents: { primary: '#26004d', secondary:'#ffddb3', tertiary: '#FF6363' },
   },
 };
 

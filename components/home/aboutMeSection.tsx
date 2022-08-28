@@ -28,14 +28,14 @@ function AboutMeSection(props: SectionProps) {
           size={40}
           colorFromPallete="accents.tertiary"
         >
-          about me
+          About me
         </Text>
         {aboutMe.map(({ area, text }) => (
           <Text colorFromPallete="accents.secondary" key={area} size={25}>
             {text}
           </Text>
         ))}
-        <Button styleType="secondary" to="#contactMe">CONTACT ME</Button>
+        <Button styleType="primary" to="#contactMe">Contact Me</Button>
       </div>
     </Section>
   );

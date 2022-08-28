@@ -24,9 +24,13 @@ const useStyles = makeStyles((theme: ThemeType) => ({
       bottom: 0,
       position: 'absolute',
       width: '100%',
-    },
-    [theme.breakpoints.down('xs')]: {
-      display: 'none',
+      "&:after": {
+        backgroundColor: `${theme.palette.accents.primary}cc`,
+        content: "''",
+        width:'100%',
+        height: '100%',
+        display: 'block'
+      }
     },
   },
   textContainer: {
@@ -36,8 +40,6 @@ const useStyles = makeStyles((theme: ThemeType) => ({
     [theme.breakpoints.down('md')]: {
       '& p': { fontSize: '20px', margin: '12px 0' },
       width: '100%',
-      background: `${theme.palette.accents.primary}cc`,
-      borderRadius: '0 0 0 20px',
     },
     [theme.breakpoints.down('sm')]: {
       padding: '20px 10px',

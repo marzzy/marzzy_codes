@@ -42,13 +42,13 @@ const useStyles = makeStyles((theme: ThemeType) => ({
   toggleModeButton: {
     background: ({ mode } : StylesProps) => (
       mode === 'dark'
-        ? colors.light.main.primary
-        : colors.dark.main.primary
+        ? colors.light.main.tertiary
+        : colors.dark.main.tertiary
     ),
     color: ({ mode } : StylesProps) => (
       mode === 'dark'
-        ? colors.light.main.secondary
-        : colors.dark.main.secondary
+        ? colors.light.neutral.tertiary
+        : colors.dark.main.primary
     ),
     borderRadius: '100%',
     width: 0,
@@ -60,8 +60,8 @@ const useStyles = makeStyles((theme: ThemeType) => ({
     cursor: 'pointer',
     border: ({ mode } : StylesProps) => (
       mode === 'dark'
-        ? `1px double ${colors.light.main.secondary}`
-        : `1px double ${colors.dark.main.secondary}`
+        ? `1px double ${colors.light.neutral.tertiary}`
+        : `1px double ${colors.dark.main.primary}`
     ),
     zIndex: 3,
     position: 'absolute',
